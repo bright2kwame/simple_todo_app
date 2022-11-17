@@ -74,6 +74,10 @@ public abstract class BaseUser {
         return email;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
     public void setEmail(String email) {
         this.email = email;
     }
@@ -136,7 +140,7 @@ public abstract class BaseUser {
         this.password = password;
     }
 
-    public abstract void login();
+    public abstract void login(String email, String password);
 
     public abstract void register();
 }
